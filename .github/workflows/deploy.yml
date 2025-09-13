@@ -25,9 +25,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
-          # Automatically configure GitHub Pages
           static_site_generator: html
-          # The base path for your site
           path: .
 
       - name: Upload artifact

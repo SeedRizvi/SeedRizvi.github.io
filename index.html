@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asad Rizvi - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -12,21 +15,25 @@
     <!-- Navigation -->
     <nav class="nav-bar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">AR</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#work" class="nav-link">Work Experience</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-left">
+                <a href="#home" class="nav-logo">AR</a>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#work" class="nav-link">Work Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -58,14 +65,10 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">
-                        I'm currently pursuing a dual degree in Mechatronic Engineering and Computer Science at UNSW, 
-                        graduating in May 2026. With a <strong>WAM of 80.23</strong> and <strong>11 High Distinctions</strong> 
-                        across both disciplines, I'm passionate about robotics, systems programming, and interdisciplinary problem-solving.
+                        I'm driven by the challenge of bridging the physical and digital worlds – from programming autonomous robots and building operating systems from scratch, to designing control systems and pursuing my fascination with space systems, where engineering precision meets the infinite possibilities of exploration.
                     </p>
                     <p class="about-details">
-                        As a Casual Academic at UNSW, I help students master the same computing concepts I excelled in. 
-                        My unique combination of mechatronics and computer science expertise allows me to bridge hardware 
-                        and software, creating innovative solutions to complex engineering challenges.
+                        Currently a Casual Academic at UNSW, where I help students learn the same practical mechatronic concepts that I excelled in. 
                     </p>
                 </div>
                 <div class="about-stats">
@@ -99,12 +102,13 @@
                     <div class="project-tags">
                         <span class="tag">C</span>
                         <span class="tag">seL4</span>
-                        <span class="tag">POSIX</span>
+                        <!-- <span class="tag">POSIX</span> -->
                         <span class="tag">Systems Programming</span>
                     </div>
                     <p class="project-description">
-                        Built a complete operating system on seL4 microkernel, implementing memory management, 
-                        multiprocessing capabilities, and POSIX compliance for robust system-level operations.
+                        Designed a fully functional OS on the seL4 microkernel. Implementations included: multi-threaded 
+                        execution, virtual memory with demand paging, filesystem architecture, executable processes, clock drivers, re-routed C library system calls, and POSIX 
+                        compliance for files & memory.
                     </p>
                 </div>
 
@@ -114,14 +118,15 @@
                         <a href="https://github.com/SeedRizvi" class="project-link"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="project-tags">
-                        <span class="tag">Java</span>
+                        <span class="tag">Agile</span>
                         <span class="tag">Firebase</span>
+                        <span class="tag">JavaScript</span>
                         <span class="tag">Payment APIs</span>
-                        <span class="tag">Team Leadership</span>
+                        <span class="tag">Leadership</span>
                     </div>
                     <p class="project-description">
-                        Led a 6-person development team to create a digital wallet application with integrated payment APIs, 
-                        achieving a 70% reduction in API calls through optimization techniques.
+                        Led a 6-person development team as Scrum Master to create a digital wallet application with integrated payment APIs,
+                        currency conversion, scheduled payments and transaction analytics.
                     </p>
                 </div>
 
@@ -132,13 +137,14 @@
                     </div>
                     <div class="project-tags">
                         <span class="tag">Python</span>
-                        <span class="tag">Computer Vision</span>
-                        <span class="tag">PID Control</span>
+                        <span class="tag">Arduino</span>
                         <span class="tag">Robotics</span>
+                        <span class="tag">PID Control</span>
+                        <span class="tag">Computer Vision</span>
                     </div>
                     <p class="project-description">
-                        Developed an autonomous maze-solving robot using computer vision and PID control algorithms, 
-                        achieving 20% speed optimization through advanced navigation techniques.
+                        Built an autonomous robot in a team of 4, integrating computer vision for path planning, PID controllers for grid traversal,
+                        and LIDAR for obstacle avoidance. Optimised wall-tracing algorithms to achieve 20% faster navigation speeds.
                     </p>
                 </div>
 
@@ -150,12 +156,12 @@
                     <div class="project-tags">
                         <span class="tag">MATLAB</span>
                         <span class="tag">STK</span>
-                        <span class="tag">Trajectory Optimization</span>
+                        <span class="tag">Trajectory Optimisation</span>
                         <span class="tag">Aerospace</span>
                     </div>
                     <p class="project-description">
-                        Designed and optimized interplanetary mission trajectories using MATLAB and STK, 
-                        focusing on fuel efficiency and mission constraints for deep space exploration.
+                        Designed and optimised interplanetary Earth-Mars mission trajectories using MATLAB and STK,
+                        focusing on fuel efficiency and mission constraints for a simplified model of deep space exploration
                     </p>
                 </div>
             </div>

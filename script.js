@@ -298,7 +298,7 @@ const styleSheet = document.createElement('style');
 styleSheet.textContent = loadingStyles;
 document.head.appendChild(styleSheet);
 
-// Performance optimization: Debounce scroll events
+// Performance optimisation: Debounce scroll events
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -331,7 +331,7 @@ Built with:
 - Responsive Design
 - Dark Theme Support
 - Smooth Animations
-- Performance Optimizations
+- Performance Optimisations
 
 WAM: 80.23 | 11 High Distinctions
 Mechatronic Engineering & Computer Science @ UNSW
