@@ -28,8 +28,8 @@
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#research" class="nav-link">Research</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#work" class="nav-link">Work Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </div>
@@ -137,12 +137,11 @@
             <div class="research-body">
               <p>
                 Investigating the use of daytime polarimetric observations to
-                determine the attitude of geostationary satellites — a largely
-                unexplored application of polarimetry. The project involves
+                determine the attitude of satellites. The project involves
                 designing and building a modified PICSARR polarimetric camera
                 for integration with an autonomous telescope system, and
-                developing algorithms to extract attitude information from the
-                polarisation signatures of reflected sunlight off satellite
+                investigating what attitude information is encoded in the
+                polarisation signatures of sunlight reflected off of satellite
                 surfaces.
               </p>
             </div>
@@ -230,46 +229,30 @@
             <div class="project-tags">
               <span class="tag">C</span>
               <span class="tag">seL4</span>
-              <span class="tag">Systems Programming</span>
+              <span class="tag">Operating Systems</span>
+              <span class="tag">Concurrency</span>
+              <span class="tag">Drivers</span>
             </div>
             <p class="project-description">
-              Designed a fully functional OS on the seL4 microkernel.
-              Implementations included: multi-threaded execution, virtual memory
-              with demand paging, filesystem architecture, executable processes,
-              clock drivers, re-routed C library system calls, and POSIX
-              compliance for files & memory.
+              Designed and built a fully functional OS on the seL4 microkernel.
             </p>
+            <ul class="project-bullets">
+              <li>
+                Multi-threaded execution and virtual memory with demand paging
+              </li>
+              <li>
+                Filesystem architecture, executable processes, and clock drivers
+              </li>
+              <li>
+                Re-routed C library system calls with POSIX compliance for files
+                &amp; memory
+              </li>
+            </ul>
           </div>
 
           <div class="project-card">
             <div class="project-header">
-              <h3>Autonomous Maze Robot</h3>
-              <a
-                href="https://github.com/SeedRizvi"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Arduino</span>
-              <span class="tag">Robotics</span>
-              <span class="tag">PID Control</span>
-              <span class="tag">Computer Vision</span>
-            </div>
-            <p class="project-description">
-              Built an autonomous robot in a team of 4, integrating computer
-              vision for path planning, PID controllers for grid traversal, and
-              LIDAR for obstacle avoidance. Optimised wall-tracing algorithms to
-              achieve 20% faster navigation speeds.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3>ROS2 UR5e Autonomous Weight-Sorting Robot</h3>
+              <h3>Autonomous Weight-Sorting Robot</h3>
               <a
                 href="https://github.com/JoshCru/mtrn4231_jakos"
                 class="project-link"
@@ -280,59 +263,28 @@
             </div>
             <div class="project-tags">
               <span class="tag">C++</span>
-              <span class="tag">Python</span>
               <span class="tag">ROS2</span>
               <span class="tag">Kalman Filter</span>
               <span class="tag">State Estimation</span>
+              <span class="tag">Embedded Systems</span>
               <span class="tag">3D CAD</span>
-              <span class="tag">Teensy</span>
+              <span class="tag">Robotics</span>
             </div>
             <p class="project-description">
-              Developed the payload sensing and hardware stack for a UR5e
-              manipulator sorting robot. Built a ROS2 weight estimation module
-              using per-joint Kalman filters on 500Hz torque data, computing
-              mass via forward kinematics (&tau; = m &times; g &times; r) with
-              polynomial gain calibration. Also designed and iterated a custom
-              gripper in CAD, prototyped with 3D printing and laser cutting,
-              wrote Teensy-based gripper control, and integrated the full
-              hardware stack into ROS2.
+              Built the hardware and estimation stack for a UR5e sorting robot.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Software & Systems</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">C/C++</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Rust</span>
-              <span class="skill-tag">ROS2</span>
-              <span class="skill-tag">seL4</span>
-              <span class="skill-tag">Embedded Systems</span>
-              <span class="skill-tag">OS Development</span>
-              <span class="skill-tag">Git</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Aerospace & Research</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">MATLAB</span>
-              <span class="skill-tag">Kalman Filters</span>
-              <span class="skill-tag">State Estimation</span>
-              <span class="skill-tag">Factor Graphs</span>
-              <span class="skill-tag">Orbital Mechanics</span>
-              <span class="skill-tag">Control Systems</span>
-              <span class="skill-tag">Polarimetry</span>
-              <span class="skill-tag">SolidWorks</span>
-              <span class="skill-tag">CAD/CAM</span>
-            </div>
+            <ul class="project-bullets">
+              <li>
+                ROS2 payload estimation using per-joint Kalman filters on torque
+                data, computing mass via forward kinematics with polynomial gain
+                calibration
+              </li>
+              <li>
+                Designed and iterated a custom gripper in CAD, prototyped with
+                3D printing and laser cutting
+              </li>
+              <li>Teensy-based gripper control, integrated into ROS2</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -378,10 +330,10 @@
           </div>
           <div class="experience-content">
             <p>
-              Demonstrated for Computing Applications in Mechatronic Systems.
-              Conducted one-on-one and group help sessions, marked assignments,
-              and provided feedback on vehicle control algorithms, simulations,
-              and practical computing applications.
+              Demonstrated for course "Computing Applications in Mechatronic
+              Systems". Conducted one-on-one and group help sessions, marked
+              assignments, and provided feedback on vehicle control algorithms,
+              simulations, and practical computing applications.
             </p>
           </div>
         </div>
@@ -401,6 +353,42 @@
               Food preparation, order management, and customer service in a
               fast-paced environment.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Software & Systems</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">C/C++</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Rust</span>
+              <span class="skill-tag">ROS2</span>
+              <span class="skill-tag">seL4</span>
+              <span class="skill-tag">Embedded Systems</span>
+              <span class="skill-tag">OS Development</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Aerospace & Research</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MATLAB</span>
+              <span class="skill-tag">Kalman Filters</span>
+              <span class="skill-tag">State Estimation</span>
+              <span class="skill-tag">Factor Graphs</span>
+              <span class="skill-tag">Orbital Mechanics</span>
+              <span class="skill-tag">Control Systems</span>
+              <span class="skill-tag">Polarimetry</span>
+              <span class="skill-tag">SolidWorks</span>
+              <span class="skill-tag">CAD/CAM</span>
+            </div>
           </div>
         </div>
       </div>

@@ -188,7 +188,9 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem 0;
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background:
+    linear-gradient(to bottom, transparent 75%, var(--bg-primary) 100%),
+    linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
 .hero-container {
@@ -498,6 +500,8 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
+  max-width: 905px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -517,7 +521,8 @@ section {
 .project-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -525,6 +530,13 @@ section {
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--text-primary);
+  flex: 1;
+  min-width: 0;
+}
+
+.project-header .project-link {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
 }
 
 .project-link {
@@ -557,6 +569,21 @@ section {
 .project-description {
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.project-bullets {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.project-bullets li {
+  margin-bottom: 0.4rem;
+}
+
+.project-bullets li:last-child {
+  margin-bottom: 0;
 }
 
 /* Skills Section */
@@ -820,15 +847,23 @@ section {
 
 /* Footer */
 .footer {
-  background: var(--bg-tertiary);
-  padding: 2rem 0;
+  background: linear-gradient(to bottom, var(--bg-primary) 0%, var(--bg-tertiary) 75%);
+  padding: 1.75rem 0;
   text-align: center;
-  border-top: 1px solid var(--border-color);
 }
 
 .footer p {
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+/* Section gradient transitions */
+.about, .projects, .skills {
+  background: linear-gradient(to bottom, var(--bg-primary) 0%, var(--bg-secondary) 12%);
+}
+
+.research, .work, .contact {
+  background: linear-gradient(to bottom, var(--bg-secondary) 0%, var(--bg-primary) 12%);
 }
 
 /* Animations */
@@ -985,6 +1020,21 @@ section {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Subtle inline links */
+.inline-link {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--text-muted);
+  text-underline-offset: 3px;
+  transition: var(--transition);
+}
+
+.inline-link:hover {
+  color: var(--primary-color);
+  text-decoration-color: var(--primary-color);
+  text-decoration-style: solid;
 }
 
 /* Focus styles for accessibility */
