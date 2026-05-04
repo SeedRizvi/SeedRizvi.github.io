@@ -29,8 +29,8 @@ themeToggle.addEventListener('click', () => {
     // Update navbar background immediately
     if (newTheme === 'dark') {
         navbar.style.background = window.scrollY > 50
-            ? 'rgba(10, 10, 10, 0.98)'
-            : 'rgba(10, 10, 10, 0.95)';
+            ? 'rgba(7, 11, 20, 0.98)'
+            : 'rgba(7, 11, 20, 0.95)';
     } else {
         navbar.style.background = window.scrollY > 50
             ? 'rgba(255, 255, 255, 0.98)'
@@ -105,12 +105,12 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.style.background = 'rgba(255, 255, 255, 0.98)';
         if (body.getAttribute('data-theme') === 'dark') {
-            navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+            navbar.style.background = 'rgba(7, 11, 20, 0.98)';
         }
     } else {
         navbar.style.background = 'rgba(255, 255, 255, 0.95)';
         if (body.getAttribute('data-theme') === 'dark') {
-            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            navbar.style.background = 'rgba(7, 11, 20, 0.95)';
         }
     }
 });

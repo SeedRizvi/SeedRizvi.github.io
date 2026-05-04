@@ -24,10 +24,10 @@
   --text-primary: #ffffff;
   --text-secondary: #b3b3b3;
   --text-muted: #666666;
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a1a;
-  --bg-tertiary: #2a2a2a;
-  --border-color: #333333;
+  --bg-primary: #070b14;
+  --bg-secondary: #0d1525;
+  --bg-tertiary: #152236;
+  --border-color: #1e2d45;
   --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.4);
   --shadow-heavy: 0 8px 32px rgba(0, 0, 0, 0.5);
@@ -298,7 +298,7 @@ section {
 
 /* About Section */
 .about {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
 }
 
 .about-content {
@@ -493,7 +493,7 @@ section {
 
 /* Projects Section */
 .projects {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
 }
 
 .projects-grid {
@@ -593,8 +593,24 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 905px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  padding: 2rem;
+  transition: var(--transition);
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
 }
 
 .skill-category h3 {
@@ -702,7 +718,7 @@ section {
 /* Work Experience */
 .work {
   padding: 5rem 0;
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
 }
 
 .work .container {
@@ -716,6 +732,7 @@ section {
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
   max-width: 800px;
   margin: 0 auto 2rem;
   transition: var(--transition);
@@ -776,16 +793,27 @@ section {
 .contact-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
   max-width: 800px;
   margin: 0 auto;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  padding: 2rem;
+  transition: var(--transition);
+}
+
+.contact-content:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .contact-item i {
@@ -825,20 +853,19 @@ section {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
-  background: var(--bg-primary);
+  padding: 0.75rem 1rem;
   border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
   text-decoration: none;
   color: var(--text-primary);
   transition: var(--transition);
-  box-shadow: var(--shadow-light);
 }
 
 .social-link:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-medium);
   background: var(--primary-color);
+  border-color: var(--primary-color);
   color: white;
+  transform: translateY(-2px);
 }
 
 .social-link i {
@@ -857,13 +884,18 @@ section {
   font-size: 0.9rem;
 }
 
-/* Section gradient transitions */
-.about, .projects, .skills {
-  background: linear-gradient(to bottom, var(--bg-primary) 0%, var(--bg-secondary) 12%);
+
+/* Dark mode: elevate cards above bg-primary sections */
+[data-theme="dark"] .research-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .experience-card,
+[data-theme="dark"] .skill-category,
+[data-theme="dark"] .contact-content {
+  background: var(--bg-secondary);
 }
 
-.research, .work, .contact {
-  background: linear-gradient(to bottom, var(--bg-secondary) 0%, var(--bg-primary) 12%);
+[data-theme="dark"] .phd-card {
+  background: linear-gradient(135deg, var(--bg-secondary), rgba(0, 212, 255, 0.02));
 }
 
 /* Animations */
