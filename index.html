@@ -1,385 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asad Rizvi - Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <link rel="icon" type="image/png" href="assets/favicon.svg">
-    <link rel="shortcut icon" href="assets/favicon.svg">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asad Rizvi - PhD Candidate</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="nav-bar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">AR</a>
-            <div class="nav-menu-wrapper">
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                    <li><a href="#work" class="nav-link">Work Experience</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">AR</a>
+        <div class="nav-menu-wrapper">
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#research" class="nav-link">Research</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#work" class="nav-link">Work Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
         </div>
+        <div class="nav-right">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-image">
-                <img src="assets/images/avatar.jpg" alt="Asad Rizvi" class="portrait">
-            </div>
-            <h1 class="hero-title">Asad Rizvi</h1>
-            <p class="hero-subtitle">Mechatronic Engineering & Computer Science Student</p>
-            <p class="hero-tagline">Building robust systems and solving complex problems through interdisciplinary expertise</p>
-            <div class="hero-cta">
-                <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="cta-button primary">Resume</a>
-                <a href="#projects" class="cta-button secondary">Projects</a>
-                <a href="#contact" class="cta-button secondary">Contact</a>
-            </div>
-            <div class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
-            </div>
+      <div class="hero-container">
+        <div class="hero-image">
+          <img
+            src="assets/images/avatar.jpg"
+            alt="Asad Rizvi"
+            class="portrait"
+          />
         </div>
+        <h1 class="hero-title">Asad Rizvi</h1>
+        <p class="hero-subtitle">PhD Candidate, Aerospace Engineering · UNSW</p>
+        <p class="hero-tagline">
+          Researching satellite attitude determination via polarimetry by
+          building optical instruments for space situational awareness
+        </p>
+        <div class="hero-cta">
+          <a href="#research" class="cta-button primary">Research</a>
+          <a href="#contact" class="cta-button secondary">Contact</a>
+        </div>
+        <div class="scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        I'm driven by the challenge of bridging the physical and digital worlds – from programming autonomous robots and building operating systems from scratch, to designing control systems and pursuing my fascination with space systems, where engineering precision meets the infinite possibilities of exploration.
-                    </p>
-                    <p class="about-details">
-                        Currently a Casual Academic at UNSW, where I help students learn the same practical mechatronic concepts that I excelled in. 
-                    </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>80.23</h3>
-                        <p>Weighted Average Mark</p>
-                    </div>
-                    <div class="stat">
-                        <h3>8</h3>
-                        <p>High Distinctions</p>
-                    </div>
-                    <div class="stat">
-                        <h3>19</h3>
-                        <p>Distinctions</p>
-                    </div>
-                    <div class="stat">
-                        <h3>2026</h3>
-                        <p>Expected Graduation</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              Currently, I am passionate about two main things: building systems
+              and exploring space. Both of these fields can be incredibly
+              complex and rewarding to work in, and I love the challenge of
+              diving into the details and figuring out how things work.
+            </p>
+            <p class="about-details">
+              My PhD at UNSW brings all of that together. I get to build real
+              optical instruments, address open research questions, and work on
+              problems the space industry cares about.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <i class="fas fa-microchip stat-icon"></i>
             </div>
+            <div class="stat">
+              <i class="fas fa-satellite stat-icon"></i>
+            </div>
+            <div class="stat">
+              <i class="fas fa-rocket stat-icon"></i>
+            </div>
+            <div class="stat">
+              <i class="fas fa-screwdriver-wrench stat-icon"></i>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <div class="research-cards">
+          <!-- PhD Card -->
+          <div class="research-card phd-card">
+            <div class="research-header">
+              <div class="research-icon">
+                <i class="fas fa-satellite"></i>
+              </div>
+              <div class="research-meta">
+                <div class="research-title-row">
+                  <h3>
+                    Satellite Attitude Determination Using Daytime Polarimetric
+                    Observations
+                  </h3>
+                  <span class="research-badge active">Active</span>
+                </div>
+                <p class="research-affiliation">
+                  PhD Candidate &middot; UNSW Aerospace Engineering &middot;
+                  Supervisor: Dr. Yang Yang
+                </p>
+                <p class="research-date">2026 &ndash; Present</p>
+              </div>
+            </div>
+            <div class="research-body">
+              <p>
+                Investigating the use of daytime polarimetric observations to
+                determine the attitude of satellites. The project involves
+                designing and building a modified PICSARR polarimetric camera
+                for integration with an autonomous telescope system, and
+                investigating what attitude information is encoded in the
+                polarisation signatures of sunlight reflected off of satellite
+                surfaces.
+              </p>
+            </div>
+            <div class="research-tags">
+              <span class="tag">Polarimetry</span>
+              <span class="tag">Attitude Determination</span>
+              <span class="tag">Space Situational Awareness</span>
+              <span class="tag">Optical Instrumentation</span>
+              <span class="tag">GEO Satellites</span>
+            </div>
+          </div>
+
+          <!-- Thesis Card -->
+          <div class="research-card thesis-card">
+            <div class="research-header">
+              <div class="research-icon" style="color: var(--primary-color)">
+                <i class="fas fa-circle-nodes"></i>
+              </div>
+              <div class="research-meta">
+                <div class="research-title-row">
+                  <h3>
+                    Factor Graph Optimisation for Satellite Orbit Determination:
+                    Gaussian Approximation Methods for Impulsive Manoeuvre
+                    Modelling
+                  </h3>
+                  <div class="research-title-actions">
+                    <span class="research-badge ongoing"
+                      >Publication Ongoing</span
+                    >
+                    <a
+                      href="https://github.com/SeedRizvi/thesis"
+                      class="project-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <p class="research-affiliation">
+                  Honours Thesis &middot; UNSW Mechatronic Engineering &middot;
+                  Supervisor: Dr. Yang Yang
+                </p>
+                <p class="research-date">2025 &ndash; 2026</p>
+              </div>
+            </div>
+            <div class="research-body">
+              <p>
+                Presents a Factor Graph Optimisation (FGO) framework for
+                geostationary satellite orbit determination during impulsive
+                manoeuvres, estimating both delta-velocity and manoeuvre epoch.
+                Uses a Gaussian approximation of the manoeuvre impulse into the
+                factor graph as an augmented dynamics factor (FGO-G), offering
+                resilience without requiring a strict dynamics model.
+              </p>
+            </div>
+            <div class="research-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Factor Graphs</span>
+              <span class="tag">Monte Carlo Simulation</span>
+              <span class="tag">State Estimation</span>
+              <span class="tag">Orbital Mechanics</span>
+              <span class="tag">Impulsive Manoeuvres</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Microkernel Operating System</h3>
-                        <a href="https://github.com/SeedRizvi" class="project-link"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tag">C</span>
-                        <span class="tag">seL4</span>
-                        <!-- <span class="tag">POSIX</span> -->
-                        <span class="tag">Systems Programming</span>
-                    </div>
-                    <p class="project-description">
-                        Designed a fully functional OS on the seL4 microkernel. Implementations included: multi-threaded 
-                        execution, virtual memory with demand paging, filesystem architecture, executable processes, clock drivers, re-routed C library system calls, and POSIX 
-                        compliance for files & memory.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>FinTech Digital Wallet</h3>
-                        <a href="https://github.com/SeedRizvi" class="project-link"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tag">Agile</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Payment APIs</span>
-                        <span class="tag">Leadership</span>
-                    </div>
-                    <p class="project-description">
-                        Led a 6-person development team as Scrum Master to create a digital wallet application with integrated payment APIs,
-                        currency conversion, scheduled payments and transaction analytics.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Autonomous Maze Robot</h3>
-                        <a href="https://github.com/SeedRizvi" class="project-link"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Arduino</span>
-                        <span class="tag">Robotics</span>
-                        <span class="tag">PID Control</span>
-                        <span class="tag">Computer Vision</span>
-                    </div>
-                    <p class="project-description">
-                        Built an autonomous robot in a team of 4, integrating computer vision for path planning, PID controllers for grid traversal,
-                        and LIDAR for obstacle avoidance. Optimised wall-tracing algorithms to achieve 20% faster navigation speeds.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Interplanetary Mission Design</h3>
-                        <a href="https://github.com/SeedRizvi" class="project-link"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="tag">MATLAB</span>
-                        <span class="tag">STK</span>
-                        <span class="tag">Trajectory Optimisation</span>
-                        <span class="tag">Aerospace</span>
-                    </div>
-                    <p class="project-description">
-                        Designed and optimised interplanetary Earth-Mars mission trajectories using MATLAB and STK,
-                        focusing on fuel efficiency and mission constraints for a simplified model of deep space exploration
-                    </p>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Microkernel Operating System</h3>
+              <a
+                href="https://github.com/SeedRizvi/comp9242-sos/"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
+            <div class="project-tags">
+              <span class="tag">C</span>
+              <span class="tag">seL4</span>
+              <span class="tag">Operating Systems</span>
+              <span class="tag">Concurrency</span>
+              <span class="tag">Drivers</span>
+            </div>
+            <p class="project-description">
+              Designed and built a fully functional OS on the seL4 microkernel.
+            </p>
+            <ul class="project-bullets">
+              <li>
+                Multi-threaded execution and virtual memory with demand paging
+              </li>
+              <li>
+                Filesystem architecture, executable processes, and clock drivers
+              </li>
+              <li>
+                Re-routed C library system calls with POSIX compliance for files
+                &amp; memory
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Autonomous Weight-Sorting Robot</h3>
+              <a
+                href="https://github.com/JoshCru/mtrn4231_jakos"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="project-tags">
+              <span class="tag">C++</span>
+              <span class="tag">ROS2</span>
+              <span class="tag">Kalman Filter</span>
+              <span class="tag">State Estimation</span>
+              <span class="tag">Embedded Systems</span>
+              <span class="tag">3D CAD</span>
+              <span class="tag">Robotics</span>
+            </div>
+            <p class="project-description">
+              Built the hardware and estimation stack for a UR5e sorting robot.
+            </p>
+            <ul class="project-bullets">
+              <li>
+                ROS2 payload estimation using per-joint Kalman filters on torque
+                data, computing mass via forward kinematics with polynomial gain
+                calibration
+              </li>
+              <li>
+                Designed and iterated a custom gripper in CAD, prototyped with
+                3D printing and laser cutting
+              </li>
+              <li>Teensy-based gripper control, integrated into ROS2</li>
+            </ul>
+          </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Software Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Rust</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Operating Systems</span>
-                        <span class="skill-tag">Firebase</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Engineering & Robotics</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Robotics</span>
-                        <span class="skill-tag">Control Systems</span>
-                        <span class="skill-tag">MATLAB</span>
-                        <span class="skill-tag">SolidWorks</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">PID Control</span>
-                        <span class="skill-tag">Signal Processing</span>
-                        <span class="skill-tag">Mechanical Design</span>
-                        <span class="skill-tag">CAD/CAM</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Academic Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Academic Excellence</h2>
-            <div class="achievements-intro">
-                <p>Here are some of my more exceptional academic performances with across diverse engineering and computer science disciplines.</p>
-            </div>
-            <div class="achievements-grid">
-                <div class="achievement-card excellence">
-                    <div class="achievement-score">93</div>
-                    <div class="achievement-content">
-                        <h4>DESN3000</h4>
-                        <h5>Strategic Design Innovation</h5>
-                        <p>Innovation strategy and stakeholder management</p>
-                    </div>
-                </div>
-
-                <div class="achievement-card excellence">
-                    <div class="achievement-score">92</div>
-                    <div class="achievement-content">
-                        <h4>MTRN3020</h4>
-                        <h5>Modelling & Control of Mechatronic Systems</h5>
-                        <p>Discrete-time control design and state estimation</p>
-                    </div>
-                </div>
-
-                <div class="achievement-card excellence">
-                    <div class="achievement-score">92</div>
-                    <div class="achievement-content">
-                        <h4>DESN2000</h4>
-                        <h5>Engineering Design 2</h5>
-                        <p>Innovative concept development and problem solving</p>
-                    </div>
-                </div>
-
-                <div class="achievement-card high-distinction">
-                    <div class="achievement-score">90</div>
-                    <div class="achievement-content">
-                        <h4>MTRN3500</h4>
-                        <h5>Computing Applications in Mechatronic Systems</h5>
-                        <p>Vehicle control algorithms and simulations</p>
-                    </div>
-                </div>
-
-                <div class="achievement-card high-distinction">
-                    <div class="achievement-score">89</div>
-                    <div class="achievement-content">
-                        <h4>MMAN2300</h4>
-                        <h5>Engineering Mechanics 2</h5>
-                        <p>Rigid body dynamics and mechanical vibrations</p>
-                    </div>
-                </div>
-
-                <div class="achievement-card high-distinction">
-                    <div class="achievement-score">86</div>
-                    <div class="achievement-content">
-                        <h4>MTRN2500</h4>
-                        <h5>Computing for Mechatronic Engineers</h5>
-                        <p>C++ programming for hardware interfacing</p>
-                    </div>
-                </div>
-
-                <div class="achievement-card high-distinction">
-                    <div class="achievement-score">86</div>
-                    <div class="achievement-content">
-                        <h4>COMP2511</h4>
-                        <h5>Object-Oriented Design & Programming</h5>
-                        <p>Software patterns and OOP paradigm</p>
-                    </div>
-                </div>
-
-                <div class="achievement-card high-distinction">
-                    <div class="achievement-score">85</div>
-                    <div class="achievement-content">
-                        <h4>MMAN1130</h4>
-                        <h5>Design and Manufacturing</h5>
-                        <p>CAD/CAM and material selection</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Work Experience Section -->
     <section id="work" class="work">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div class="experience-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="experience-info">
-                        <h3>MTRN3500 Demonstrator</h3>
-                        <h4>UNSW School of Mechanical and Manufacturing Engineering</h4>
-                        <p class="experience-date">Aug 2025 - Present</p>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <p>Currently teaching Computing Applications in Mechatronic Systems. Helping students master vehicle control algorithms, simulations, and practical computing applications in mechatronic systems.</p>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-satellite-dish"></i>
             </div>
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div class="experience-icon">
-                        <i class="fas fa-pizza-slice"></i>
-                    </div>
-                    <div class="experience-info">
-                        <h3>Customer Service Representative</h3>
-                        <h4>Domino's</h4>
-                        <p class="experience-date">Nov 2018 - Jan 2021</p>
-                    </div>
-                </div>
-                <div class="experience-content">
-                    <p>As a Customer Service Representative at Domino's, I handled food preparation, customer orders, and cut and boxed pizzas.
-                         I also maintained cleanliness, restocked ingredients, and ensured a smooth operation during busy shifts.
-                         This role required attention to detail, efficiency, and strong customer service skills in a fast-paced environment.</p>
-                </div>
+            <div class="experience-info">
+              <h3>Software Engineer Intern</h3>
+              <h4>Skykraft</h4>
+              <p class="experience-date">Jan 2026 &ndash; Mar 2026</p>
             </div>
+          </div>
+          <div class="experience-content">
+            <p>
+              Developed hardware device drivers in C for the seL4 microkernel
+              using the seL4 Device Driver Framework, implementing communication
+              interfaces including Ethernet, I2C, SPI, DMA, and CAN. Debugged
+              embedded hardware on the Kria K26 SoM and carrier FPGA using AMD
+              Vivado SDK, PCB schematics, and oscilloscopes. Worked within a
+              safety-critical aerospace embedded OS environment and produced
+              comprehensive driver specification documentation for hand-over.
+            </p>
+          </div>
         </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="experience-info">
+              <h3>Casual Academic &mdash; MTRN3500 Demonstrator</h3>
+              <h4>UNSW School of Mechanical and Manufacturing Engineering</h4>
+              <p class="experience-date">Aug 2025 &ndash; Dec 2025</p>
+            </div>
+          </div>
+          <div class="experience-content">
+            <p>
+              Demonstrated for course "Computing Applications in Mechatronic
+              Systems". Conducted one-on-one and group help sessions, marked
+              assignments, and provided feedback on vehicle control algorithms,
+              simulations, and practical computing applications.
+            </p>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-icon">
+              <i class="fas fa-pizza-slice"></i>
+            </div>
+            <div class="experience-info">
+              <h3>Customer Service Representative</h3>
+              <h4>Domino's</h4>
+              <p class="experience-date">Nov 2018 &ndash; Jan 2021</p>
+            </div>
+          </div>
+          <div class="experience-content">
+            <p>
+              Food preparation, order management, and customer service in a
+              fast-paced environment.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:syas.rizvi@gmail.com">syas.rizvi@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-file-pdf"></i>
-                        <div>
-                            <h4>Resume</h4>
-                            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume (PDF)</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Sydney, Australia</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/asad-raza-rizvi" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/SeedRizvi" class="social-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+          <a href="mailto:syas.rizvi@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>syas.rizvi@gmail.com</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/asad-raza-rizvi"
+            class="contact-item"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Sydney, Australia</span>
+          </div>
+          <a
+            href="https://github.com/SeedRizvi"
+            class="contact-item"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Asad Rizvi. Built with passion and precision.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Asad Rizvi</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
