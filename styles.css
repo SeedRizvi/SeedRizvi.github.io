@@ -536,12 +536,12 @@ section {
 
 .project-header .project-link {
   flex-shrink: 0;
-  margin-top: 0.15rem;
+  margin-top: -0.125rem;
 }
 
 .project-link {
   color: var(--text-muted);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transition: var(--transition);
 }
 
@@ -935,6 +935,10 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .about-stats {
+    display: none;
+  }
+
   .contact-content {
     grid-template-columns: 1fr;
   }
@@ -1007,6 +1011,18 @@ section {
   .achievement-card {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-height: 850px) {
+  .hero {
+    padding-top: 90px;
+    align-items: flex-start;
+  }
+
+  .hero-container {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
